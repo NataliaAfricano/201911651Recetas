@@ -25,7 +25,7 @@ article#section1,#section3,#section5  {
 
 }
 
-article#section2,#section4 {
+article#section2,#section4,#section6 {
 	border: 2px double blue;
 	background-color: antiquewhite;
 }
