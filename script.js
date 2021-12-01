@@ -69,3 +69,58 @@ function getData() {
     content.innerHTML += "<p>"  + data2.input_mail + "</p>"; 
 }
 
+var recipes1 = document.getElementById("section1"); 
+var recipes2 = document.getElementById("section2"); 
+var recipes3 = document.getElementById("section3"); 
+var recipes4 = document.getElementById("section4"); 
+var recipes5 = document.getElementById("section5"); 
+var recipes6 = document.getElementById("section6"); 
+
+recipes1.addEventListener("click", function(event){
+	event.preventDefault();
+	content.innerHTML = "<h5> Instrucciones </h5>";
+	content.innerHTML += "<p>"  + "1"  + "</p>"; 
+    content.innerHTML += document.getElementById("instruction1").value; 
+    
+
+}); 
+ 
+recipes2.addEventListener("click", function(event){
+	event.preventDefault();
+	content.innerHTML = "<h5> Instrucciones </h5>";
+    content.innerHTML += "<p>"  + "2"  + "</p>"; 
+    content.innerHTML += document.getElementById("instruction2").value; 
+
+}); 
+
+recipes3.addEventListener("click", function(event){
+	event.preventDefault();
+	content.innerHTML = "<h5> Instrucciones </h5>";
+    content.innerHTML += "<p>"  + "3"  + "</p>";
+    content.innerHTML += document.getElementById("instruction3").value;  
+
+}); 
+
+recipes4.addEventListener("click", function(event){
+	event.preventDefault();
+	content.innerHTML = "<h5> Instrucciones </h5>";
+    content.innerHTML += "<p>"  + "4"  + "</p>";
+    content.innerHTML += document.getElementById("instruction4").value;  
+
+}); 
+
+recipes5.addEventListener("click", function(event){
+	event.preventDefault();
+	content.innerHTML = "<h5> Instrucciones </h5>";
+    content.innerHTML += "<p>"  + "5"  + "</p>";
+    content.innerHTML += document.getElementById("instruction5").value;  
+
+}); 
+
+recipes6.addEventListener("click", function(event){
+	event.preventDefault();
+	content.innerHTML = "<h5> Instrucciones </h5>";
+    content.innerHTML += "<p>"  + "6"  + "</p>"; 
+    content.innerHTML += document.getElementById("instruction6").value; 
+
+}); 
