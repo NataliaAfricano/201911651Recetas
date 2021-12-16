@@ -12,26 +12,26 @@ form1.addEventListener("submit", function(event){
 	var phoneLocal = document.getElementById("input_phone").value;
 	var addressLocal = document.getElementById("input_address").value;
 
-	var marcador = {
+	var list = {
 		nameL : nameLocal,
 		lastnameL : lastnameLocal,
 		phoneL : phoneLocal,
 		addressL : addressLocal
 	}
 
-	if (localStorage.getItem('marcadores') === null) {
-		var marcadores = [];
+	if (localStorage.getItem('lists') === null) {
+		var lists = [];
 
 		//agregar al arreglo
-		marcadores.push(marcador);
+		lists.push(list);
 		//guardar en el localstorage
-		localStorage.setItem('marcadores',JSON.stringify(marcadores));
+		localStorage.setItem('lists',JSON.stringify(lists));
 	}else{
-		var marcadores = JSON.parse(localStorage.getItem('marcadores'));
+		var lists = JSON.parse(localStorage.getItem('lists'));
 		//agregar al arreglo
-		marcadores.push(marcador);
+		lists.push(list);
 		//guardar en el localstorage
-		localStorage.setItem('marcadores',JSON.stringify(marcadores));
+		localStorage.setItem('marcadores',JSON.stringify(lists));
 	}
 
 	//resetear campos
