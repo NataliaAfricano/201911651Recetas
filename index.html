@@ -299,6 +299,7 @@
 
 						</div>
 
+<!-- 
 						<div class="row">
 							<div class="col -8">
 								<caption>Fecha Nacimiento</caption>
@@ -336,14 +337,44 @@
 						</div>
 						
 				</fieldset>
+-->
 				<hr>
-				<button type="submit"> Enviar Formulario</button>
-		</form>	
+				<!-- Borra el contenido de los campos -->
+				<button type="reset" class="btn btn-success" onclick="capture();"> Enviar Formulario</button>
+				<!--NO Borra el contenido de los campos 
+				<button type="submit" class="btn btn-success"> Enviar </button> -->
+
+				<button type="submit"> Enviar Formulario Web</button>
 
 		<div >
 			<hr>
 			<h3>Respuestas</h3>
 			<p id="answer"> </p>
+			<table class="table" id="table">
+				<thead class="thead-inverse">
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>Celular</th>
+						<th>Dirección</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<div>
+			<h3>WebStorage</h3>
+			<p id="answerStorage"> </p>
+			<table class="table" id="table2">
+				<thead class="thead-inverse">
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>Celular</th>
+						<th>Dirección</th>
+					</tr>
+				</thead>
+			</table>
 		</div>
 	</main>
 	
