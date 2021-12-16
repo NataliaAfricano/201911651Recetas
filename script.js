@@ -35,7 +35,39 @@ form1.addEventListener("submit", function(event){
 
 	//resetear campos
 	document.getElementById("form-1").reset();
+		showlist();
+
 }); 
+
+function showlist(){
+	//obtener los datos del local storage
+	var lists = JSON.parse(localStorage.getItem('lists'));
+
+	//guardar en el formulario
+	var results = document.getElementById("answerStorage");
+	var results2 = document.getElementById("table2");
+
+	for (var i = 0; i < lists.length; i++) {
+		var nombre = lists[i].nameL;
+		var apellido = lists[i].lastnameL;
+		var telefono = lists[i].phoneL;
+		var direccion = lists[i].addressL;
+
+		results.innerHTML += "<p>"
+							+ "<b> Nombre: </b>"  + nombre + "<br>" 
+							+ "<b> Apellidos: </b>"  + apellido + "<br>" 
+							+ "<b>Telefono: </b>"  + telefono + "<br>" 
+							+ "<b> Direccion: </b>"  + direccion + "<br>" 
+							+ "</p>";
+
+		results2.innerHTML += "<tbody>" +
+								"<td>" + nombre + "</td>" +
+							  	"<td>" + apellido  + "</td>" +
+							  	"<td>" + telefono + "</td>" +
+								"<td>" + direccion  + "</td>" +
+							  "</tbody>";
+	}
+}
 
 /*
 
