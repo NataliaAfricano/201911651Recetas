@@ -35,7 +35,7 @@ form1.addEventListener("submit", function(event){
 	}
 
 	//resetear campos
-	document.getElementById("form-1").reseat();
+	document.getElementById("form-1").reset();
 }); 
 
 /*
