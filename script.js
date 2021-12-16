@@ -21,7 +21,6 @@ form1.addEventListener("submit", function(event){
 
 	if (localStorage.getItem('lists') === null) {
 		var lists = [];
-
 		//agregar al arreglo
 		lists.push(list);
 		//guardar en el localstorage
@@ -31,7 +30,7 @@ form1.addEventListener("submit", function(event){
 		//agregar al arreglo
 		lists.push(list);
 		//guardar en el localstorage
-		localStorage.setItem('marcadores',JSON.stringify(lists));
+		localStorage.setItem('lists',JSON.stringify(lists));
 	}
 
 	//resetear campos
